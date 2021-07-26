@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+
+
+    var query = new Dictionary<string, string>
+            {
+                { "id", "123" },
+                { "name", "hanako" }
+            };
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <ul>
+        <li><a asp-controller="Hello" asp-action="Index">2.2 コントローラとビューの基本</a></li>
+        <li><a asp-controller="Form" asp-action="Index">2.3 フォームの利用</a></li>
+        <li><a asp-controller="FormSave" asp-action="Index">2.3 フォームの利用（フォームを記憶する）</a></li>
+        <li><a asp-controller="FormSelect" asp-action="Index">2.3 フォームの利用（select/option）</a></li>
+        <li><a asp-controller="FormSelectModified" asp-action="Index">2.3 フォームの利用（select/option）[SelectListItemを使用した改造版]</a></li>
+        <li><a asp-controller="FormMultiSelect" asp-action="Index">2.3 フォームの利用（select/option）複数選択</a></li>
+        <li><a asp-controller="FormMultiSelectModified" asp-action="Index">2.3 フォームの利用（select/option）複数選択[SelectListItemを使用した改造版]</a></li>
+        <li><a asp-controller="Query" asp-action="Index" asp-all-route-data="query">2.4 クエリから値を受け渡す</a></li>
+        <li><a asp-controller="Session" asp-action="Index" asp-all-route-data="query">2.4 セッションに値を保存</a></li>
+        <li><a asp-controller="Session" asp-action="Other">2.4 セッションに保存された値を表示</a></li>
+    </ul>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
